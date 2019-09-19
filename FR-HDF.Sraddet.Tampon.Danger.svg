@@ -1,0 +1,20 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="802" height="602" id="canvas_background" fill="none"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_4" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_7">
+   <rect stroke="#ff0000" fill="#ff0000" stroke-width="15" x="36.293434" y="217.22059" width="844.673847" height="282.000057" id="svg_2" rx="5" fill-opacity="0.2" transform="matrix(0.8290024385444028,-0.22213053393140414,0.22213053393140414,0.8290024385444028,-59.77742275972195,104.9100146246495) "/>
+   <text stroke="null" fill="#ff0000" stroke-width="0.5" x="236.365949" y="334.19105" id="svg_3" font-size="44" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(2.993482792077101,-0.8021012966935215,0.8021012966935215,2.993482792077101,-888.0390910593172,-391.26756451567866) " font-weight="bold">SRADDET</text>
+   <text stroke="null" fill="#ff0000" stroke-width="0.5" x="257.966633" y="354.684352" id="svg_5" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(2.993482792077101,-0.8021012966935215,0.8021012966935215,2.993482792077101,-908.9337940423325,-380.3963887743937) " font-weight="bold">Hauts-de-France</text>
+   <text stroke="null" fill="#ff0000" stroke-width="0.5" x="303.384417" y="302.066495" id="svg_6" font-size="12" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(2.993482792077101,-0.8021012966935215,0.8021012966935215,2.993482792077101,-872.3800354101027,-405.53729733613915) " font-weight="bold">Danger !</text>
+  </g>
+ </g>
+</svg>
