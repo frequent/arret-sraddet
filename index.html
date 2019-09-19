@@ -96,6 +96,9 @@
         box-sizing: border-box;
       }
       @media only screen and (max-width: 54em) {
+        .site-overload, a {
+          word-break: break-all;
+        }
         .site-newletter__header {
           height: 7em;
         }
@@ -157,6 +160,25 @@
           width: 46vh;
         }
       }
+      .site-supporter__image {
+        max-width: 4em;
+      }
+      .site-bottom__line {
+        margin-top: 5em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 14px;
+        font-family: Lato;
+        text-decoration: none;
+        color: #90bc2a;
+      }
+      .site-bottom__line a {
+        color: #90bc2a;
+        font-family: Lato;
+        font-size: 14px;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body class="site-newletter__body">
@@ -175,7 +197,7 @@
       </ul>
       <h2>Pourquoi participer ?</h2>
       <ul>
-        <li>aucune prise en compte sérieuse du dérèglement climatique et de la crise de la biodiversité, aucune prévention des risques induits (submersion marine sur littoral industriel et nucléaire, sécheresse, inondations...)</li>
+        <li>ne prend pas en compte du dérèglement climatique, la crise de la biodiversité et la prévention des risques induits (submersion marine sur littoral industriel et nucléaire, sécheresse, inondations...)</li>
         <li>dérégulation de l'aménagement et du développement économique aggravant cette crise : urbanisation non maîtrisée, hub logistique international, agriculture chimique, sur consommation énergétique</li>
         <li>mépris du principe de non régression environnementale des accords nationaux et internationaux en faveur du climat</li>
       </ul>
@@ -183,17 +205,17 @@
       <h2 class="site-overload">Comment participer à l'enquête publique sur le SRADDET ?</h2>
       <ul>
         <li>Lire le SRADDET Hauts-de-France <a href="http://sraddet.participons.net/">http://sraddet.participons.net/</a></li>
-        <li>Donnez vos avis sur <a href="https://www.registredemat.fr/sraddethautsdefrance-enquetepublique/presentation">https://www.registredemat.fr/sraddethautsdefrance-enquetepublique/presentation</a></li>
+        <li>Donnez vos avis sur <a href="https://www.registredemat.fr/sraddethautsdefrance-enquetepublique/">https://www.registredemat.fr/sraddethautsdefrance-enquetepublique/</a></li>
         <li>Partagez cette page</li>
       </ul>
 
       <h2 class="site-overload">Porteurs</h2>
       <div class="site-supporter__list">
         <div class="site-supporter">
-          
+          <a href="https://www.voltlille.fr/"><img src="volt.min.png" alt="Volt Lille" class="site-supporter__image" /></a>
         </div>
       </div>
-      
+      <div class="site-bottom__line">Site crée par <a href="https://github.com/frequent/arret-sraddet">Sven Franck</a></div>
 
   </body>
 </html>
