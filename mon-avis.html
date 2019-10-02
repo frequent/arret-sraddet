@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arrêt SRADDET - mon avis</title>
+
+    <meta name="application-name" content="SRADDET Hauts-de-France - Vos paroles pour votre avenir !">
+    <meta name="description" content="Donnez vos avis dans l'enquête publique de SRADDET Hauts-de-France pour proteger notre région !" />
+    <meta name="url" content="https://arret-sraddet.fr/mon-avis.html" />
+    <meta name="keywords" content="SRADDET, Hauts-de-France, enquête publique, environnement, réchauffement climatique, écocide" />
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="SRADDET Hauts-de-France - Vos paroles pour votre avenir !" />
+    <meta property="og:site_name" content="Arrêt SRADDET" />
+    <meta property="og:description" content="Donnez vos avis dans l'enquête publique de SRADDET Hauts-de-France pour proteger notre région !" />
+    <meta property="og:url" content="https://arret-sraddet.fr/mon-avis.html" />
+    <meta property="og:locale" content="fr_fr" />
+    <meta property="og:image" content="https://arret-sraddet.fr/FR-HDF.Social.Media.Image.512x256.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="256" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="SRADDET Hauts-de-France - Vos paroles pour votre avenir !" />
+    <meta name="twitter:description" content="Donnez vos avis dans l'enquête publique de SRADDET Hauts-de-France pour proteger notre région !" />
+    <meta name="twitter:url" content="https://arret-sraddet.fr/mon-avis.html" />
+    <meta name="twitter:creator" content="@SvenFranck" />
+    <meta name="twitter:image" content="https://arret-sraddet.fr/FR-HDF.Social.Media.Image.512x512.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="lib/jspdf.min.js"></script>
+
+    <style type="text/css">
+
+      .site-newletter__body {
+        height: 100%;
+        background-color: #ffffff;
+      }
+      .site-newletter__header {
+        background-color: #ffffff;
+        height: 3em;
+      }
+      .site-newletter__header-logo {
+        width: 11em;
+        position: fixed;
+        right: -1em;
+        top: -.5em;
+      }
+      h1, h2, h3, p, li, a, span, label {
+        font-family: 'Lato', sans-serif;
+      }
+      p, li, a, span {
+        font-size: 18px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 2.5em;
+      }
+      h1, h2, h3, b {
+        color: #90bc2a;
+      }
+      .site-overload, a {
+        color: #90bc2a;
+      }
+      hr {
+        width: 60%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+      figcaption {
+        font-size: .8em;
+        font-style: italic;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 2em;
+      }
+      .site-newletter__content {
+        max-width: 65%;
+        margin: 0 auto;
+        padding: 0 1em;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .site-newletter__text-image {
+        max-width: 49%;
+        display: inline-block;
+      }
+      .site-newsletter__image {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        display: block;
+        max-width: 32em;
+        margin: 0 auto;
+        padding: 1em;
+        box-sizing: border-box;
+      }
+      @media only screen and (max-width: 54em) {
+        .site-overload, a {
+          word-break: break-all;
+        }
+        .site-newletter__header {
+          height: 7em;
+        }
+        .site-newletter__header-logo {
+          position: absolute;
+          right: 0;
+        }
+        .site-newletter__content {
+          max-width: none;
+          width: 100%;
+        }
+        .site-newletter__text-image {
+          display: block;
+          max-width: none;
+          width: 100%;
+          margin-bottom: .5em;
+        }
+        .site-newletter__calendar-list {
+          list-style: none;
+          margin:0;
+          padding: 0;
+        }
+      }
+      @media only screen and (max-width: 32em) {
+        .site-newsletter__image {
+          width: 100%;
+        }
+      }
+      .site-image__container {
+        margin: 5% 0 0 0;
+        position: relative;
+      }
+      .site-sraddet__banner {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+      .site-sraddet__tampon {
+        width: 60vh;
+        display: block;
+        margin: 0 auto;
+        margin-top: -4em;
+        margin-bottom: -1em;
+      }
+      .site-banner__image {
+        margin: 0 auto;
+        display: block;
+        padding-top: 1em;
+      }
+      .site-supporter__list .site-supporter {
+        display: inline-block;
+      }
+      @media only screen and (max-width: 32em) {
+        .site-image__container {
+          width: 100%;
+          margin: 0;
+        }
+        .site-sraddet__tampon {
+          width: 46vh;
+        }
+      }
+      .site-supporter__image {
+        max-width: 4em;
+      }
+      .site-bottom__line {
+        margin-top: 5em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 14px;
+        font-family: Lato;
+        text-decoration: none;
+        color: #90bc2a;
+      }
+      .site-bottom__line a {
+        color: #90bc2a;
+        font-family: Lato;
+        font-size: 14px;
+        text-decoration: none;
+      }
+      .site-option label {
+        font-size: 1.15em;
+      }
+      .site-option {
+        margin-bottom: 1.5em;
+        padding: 0 1em;
+      }
+      .site-option label {
+        display: block;
+        margin-left: 10px;
+      }
+      .site-option input {
+        float: left;
+        margin-left: -20px;
+        margin-right: 7px;
+        margin-top: 5px;
+      }
+      .field-element {
+        margin-bottom: 1em;
+      }
+      .field-element label {
+        font-size: 1.15em;
+      }
+      .site-option__custom label,
+      .field-element label {
+        width: 20%;
+        min-width: 5em;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .site-option__custom input {
+        float: none; 
+      }
+      .site-option__content {
+        display: none;
+      }
+      .site-option__custom textarea,
+      .site-option input:checked ~ .site-option__content {
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .site-option label {
+        cursor: pointer;
+      }
+      #dummy {
+        font-size: 1.15em;
+      }
+    </style>
+  </head>
+  <body class="site-newletter__body">
+    <div class="site-newletter__content">
+      <div class="site-image__container">
+        <img id="banner" class="site-sraddet__banner" src="FR-HDF.Sraddet.Banner.Dark.svg" alt="Hauts-de-France dans les prochains 20 années" />
+      </div>
+
+      <h1>Générateur d'un avis</h1>
+      <p style="text-align:center">
+        <i>Veuillez compléter le formulaire au-dessous afin de créer un pdf à soumettre sur le site de <a target="_blank" href="https://www.registredemat.fr/sraddethautsdefrance-enquetepublique/deposez-votre-observation-en-ligne">sraddet/registredemat</a></i>.<br/> 
+        <i>Les explications pour chaque point seront ajoutées dans l'avis</i>
+      </p>
+      
+      <form name="avis" id="avis">
+        <hr/>
+        <div class="site-option__wrapper">
+          <div class="site-option">
+            <input type="checkbox" id="biodiversity_header" name="biodiversity_header" />
+            <label for="biodiversity_header">J’oppose ce SRADDET, parce que la biodiversité n’était pas pris en compte.</label>
+            <br/>
+            <textarea class="site-option__content" rows="10" name="biodiversity_content">
+Le SRADDET prend en compte la biodiversité en la voyant surtout comme une contrainte ou une ressource à valoriser dans les aménagements prévus - mais, la biodiversité est un des principaux axes de ce document !  
+
+Il n’y est fait aucune analyse de l’état de la biodiversité ni aucune proposition de stratégie. L’annexe 2 - ‘Diagnostic du territoire régional Plan d’action stratégique Biodiversité’, est incomplet, plusieurs sections sont toujours ‘à développer’ - par exemple: 2.3 Agir pour la conservation des espèces menacées (p. 35) - les objectifs du plan d'action, les cibles principales, les partenaires, les indicateurs et les propositions de mise en œuvre restent à développer - ce qui veut dire, que pour les dix prochaines années la protection des espèces menacées est ‘en attente’ ?
+
+En conséquence, les règles sont «vaseuses»...  favoriser la biodiversité dans les milieux urbains, préserver la biodiversité dans les chemins ruraux, définir des réservoirs de biodiversité. Il manque des enjeux et des cibles spécifique à atteindre. Il manque également des éléments sur la protection des territoires et du littoral dotés par le SRADDET pour les exemples suivants. 
+
+L'avis de l'Autorité environnementale (AE) est conforme (p 21) : Milieux naturels et biodiversité.’ L’AE constate, comme le CESER, qu’aucun défi ou orientation générale ne concerne directement la trame verte et bleue, ni les continuités écologiques, en dépit du rôle de chef de file de la Région sur ce domaine’
+            </textarea>
+          </div>
+          <div class="site-option">
+            <input type="checkbox" id="logistics_header" name="logistics_header" />
+            <label for="logistics_header">J'oppose ce SRADDET, parce qu'il donne une carte blanche pour le Canal Seine Nord Europe et des installations de la logistique</label>
+            <br/>
+            <textarea class="site-option__content" rows="10" name="logistics_content">
+La région est un des territoires les plus fragmentés en Europe avec des milieux (semi-)naturels limités à 20% de la surface totale de la Picardie et 8% du Nord-Pas-de-Calais (34% en France). 
+
+Une des rares cibles définie par le SRADDET est la réduction d’artificialisation des sols de 1500 ha/an (consommation entre 2003-2012)  à 750 ha/an en 2030 et 500 ha/an d’ici 2050. Mais les consommations étaient déjà réduites à 850 hectares depuis 2012 et ont atteint 600 ha en 2016, donc les 750 ha ne sont pas pris en compte par les chiffres actuels et légitiment davantage de constructions et d’artificialisations. De plus, la règle 14 (Fascicule de règles, p.50) spécifie l‘objectif chiffré de réduction de consommation des espaces agricoles, naturels et forestiers… ’ mais suivant ‘...ce chiffre n’intègre pas le foncier nécessaire pour la réalisation des grands projets régionaux que sont : le Canal Seine Nord Europe, le Réseau express Grand Lille, les aménagements liés au barreau ferroviaire Picardie-Roissy, les zones de stationnement directement liées aux conséquences du BREXIT à proximité des zones portuaires, ainsi que les projets de développement économique structurants inscrits dans les SCoT’ - donc cela signifie tous les grands projets ?
+
+L'avis de l'AE est aussi critiqué dans cette approche (p 25) : ‘Le fait que la règle 14 définisse un objectif de réduction de consommation d’espaces naturels, agricoles et forestiers qui n’intègre pas le Canal Seine-Nord (CSNE) fait perdre au SRADDET sa cohérence d’ensemble et le fragilise fortement’... ‘La prise en compte du CSNE et de toutes ses conséquences pour la Région nécessiterait très probablement une révision du SRADDET si celui-ci ne les prenait pas en compte a priori, en particulier sur la consommation d’espace et l’environnement.’            </textarea>
+          </div>
+          <div class="site-option">
+            <input type="checkbox" id="climate_change_header" name="climate_change_header" />
+            <label for="climate_change_header">J'oppose ce SRADDET, parce qu'il ne prend pas pour sérieux le changement climatique</label>
+            <textarea class="site-option__content" rows="10" name="climate_change_content">
+Se pourrait-il que la seule mesure proposée dans le SRADDET pour se préparer au changement climatique soit dans le fascicule des règles, ‘La gestion des déchets produits en situation exceptionnelle’, qui prévoit un capacité de 100 000 tonnes / an pour ces occasions ? 
+
+Le SRADDET parle de l’élévation du niveau moyen de la mer (10 cm depuis 1955 à Dunkerque). En corrélation avec l'évolution de températures et les émissions de GES depuis 1955 il est probable, que l'augmentation des températures entre 1-2⁰ au minimum va accélérer cette trajectoire causant des risques graves pour la littoral (inondation, submersion, ondes de tempête). Fukushima était une situation exceptionnelle aussi. La solidarité entre le littoral et l’arrière-pays spécifié dans la régle 12 (Fascicule de règles, p34) ne compte certainement pas comme une stratégie de mitigation.
+
+Il manque donc au SRADDET une analyse des risques sérieuse avec des propositions concrètes sur comment la région peut s’adapter face aux risques de changement climatique, du littoral à l'Ile-de-France.
+            </textarea>
+          </div>
+          <div class="site-option">
+            <input type="checkbox" id="renewables_header" name="renewables_header" />
+            <label for="renewables_header">J'oppose ce SRADDET, parce qu'il limite l'développement des énergies renouvelables</label>
+            <textarea class="site-option__content" rows="10" name="renewables_content">
+La région est loin en terme de niveau des énergies renouvelables, c'est quatre fois moindre qu’au plan national, soit 17 TWh générée (2015) qui correspond à 8% de la consommation d’énergie finale régionale (le niveau national en France est déjà presque de 15% - en comparaison en Allemagne (aussi 2015) les énergies renouvelables ont contribué à hauteur de 35% (soit 188 TWh) dans la consommation nationale (aujourd’hui : 65%, 225 TWh). Ce bas niveau est attribué à 'l'absence de réel potentiel hydroélectrique et de grandes forêts' (Objectifs, p.226) mais les bois et l'hydroénergie n’ont contribué qu’à seulement 30% de la quantité totale en Allemagne en 2015 (et 27% aujourd'hui).
+
+L’avis de l'AE est aussi négatif sur ce point (p. 27) : ‘Au-delà de 2031, la réduction des émissions de gaz à effet de serre et les objectifs de développement des énergies renouvelables indiquent « vers facteur 4 » à l’horizon 2050, sans autre précision et en particulier, sans déclinaison par type d’énergie renouvelable, ce qui, formulé tel quel, n’est pas compatible avec la stratégie nationale bas carbone et la programmation pluriannuelle de l’énergie qui visent la neutralité carbone et non plus le facteur 4’.
+
+Et (p.28) ‘la contribution totale incluant toutes les énergies renouvelables reste significativement inférieure à la contribution moyenne des autres régions, ce qui interroge sur la compatibilité du SRADDET avec la Loi de Transition Énergétique pour la Croissance Verte (2016), en l’absence de discussion sur ce point.’
+
+Le SRADDET parle aussi d'une saturation d'éoliennes (Objectifs, p.226) et définit la règle 8 (Fascicule, p.26) qui souhaite privilégier ‘le développement des énergies renouvelables et de récupération autre que l’éolien terrestre’. Concernant la saturation, il y a 4689 éoliennes installées dans la région, dont seulement 4 sur le territoire de la MEL ! Concernant le faible niveau de renouvelables en général dans la région et des éoliennes sur quelques territoires, cette limitation semble être contre productive. 
+
+En outre, tandis que cette règle comprend des mesures d'accompagnement, les objectifs qui sont fondamentaux à l'échelle régionale pour une vraie autonomie en terme d'énergie - comme la création de conditions favorables et la législation nécessaire pour permettre d’installer des réseaux d'électricité décentralisés, des circuits d'électricité bas et des ‘smart grids’ (Diagnostique, p.59/p.68) - sont absents. 
+            </textarea>
+          </div>
+          <div class="site-option">
+            <input type="checkbox" id="greenhouse_header" name="greenhouse_header" />
+            <label for="greenhouse_header">J'oppose ce SRADDET, parce qu'il ne propose pas de cibles afin de réduire les émissions de gaz de serre</label>
+            <textarea class="site-option__content" rows="10" name="greenhouse_content">
+Les émissions de GES sont très élevées dans la région : 68 millions tonnes équivalent CO2 (MteqCO2), soit 10.3 teqCO2 / habitant (en France 7 teqCO2 / habitant) - de plus, une hausse de 28% entre 1990-2014 a eu lieu. L'industrie reste l'un des émetteurs principaux après l'agriculture, le transport et le résidentiel-tertiaire. Le SRADDET constate que cette tendance va continuer et que le transport, par exemple, va se multiplier par 3 d'ici 2050 avec 60% de plus d'émission de CO2 et des autres polluants (Diagnostique, p.36).
+
+Le SRADDET prend compte le transport (20% des émissions régionales) avec la règle 31 et le secteur résidentiel avec la règle 33 (réhabilitation thermique), mais il reste modeste sur ses propositions - le soutien des expérimentations ‘domicile-travail’ et un appel à développer une stratégie pour la réhabilitation thermique des bâtiments. Des propositions pour l'agriculture et l'industrie pour réduire leurs émissions sont absentes - un traitement privilégié est contre l'égalité des territoires, la répartition des charges et l'équilibre des mesures portés par le SRADDET.
+
+En parallèle, la règle 25 pour l'intégration du Réseau Routier d'Intérêt Régional dans le planning au niveau local est plus spécifique - y compris l'information que l'inscription au RIRR d'un axe routier ne signifie pas qu'il y aura automatiquement un financement par la Région. L'expérimentation pour réduire les trajets domiciles-travail et des financements pour construire plus d'autoroutes - c'est tout du moins contradictoire. Avec ce SRADDET, la région est loin d'arriver aux objectifs nationaux, européennes et mondiaux pour réduire nos émissions.
+            </textarea>
+          </div>
+          <div class="site-option">
+            <input type="checkbox" id="transport_header" name="transport_header" />
+            <label for="transport_header">J'oppose ce SRADDET, parce qu'il ne propose pas de solutions cohérent pour les transport dans la région</label>
+            <textarea class="site-option__content" rows="10" name="transport_content">
+Une grande partie du SRADDET s'occupe des transports fluviaux - le Canal Seine Europe Nord, le 1381 km de canaux déjà navigables, les 44 ports fluviaux et de plaisance et les haltes nautiques. Le besoin de construire encore plus d'infrastructures fluviales. Les ports de Calais et Dunkerque tournent à 7.4% (soit 50Mt) du trafic de marchandise hors conteneur et 0.7% de trafic conteneurisés de la Rangée Nord d'Europe (et 25% et 32% des importations par la mer en France). Seulement 5% de marchandises sont transportés en mode fluvial. Mais la plupart des ambitions de ce SRADDET se concentre sur l'augmentation de ces 5% - sans grand égard pour l'environnement ou les autres modes de transports.
+
+Par exemple, le transport ferroviaire (15.7% de marchandises transportées) est largement absent du SRADDET - un fait qui est aussi critiqué par l'AE (p 24) ‘Le SRADDET comporte peu de raisonnements multimodaux, le service ferroviaire étant notamment très largement absent de la stratégie, alors que c'est une compétence première d'une Région.’ ‘Ainsi, les règles 25 à 31 pour une « intermodalité et une offre de transport améliorées » ... renvoient aux territoires la responsabilité de développer des services, pratiques et des innovations pour promouvoir les reports modaux, y compris entre eux « aux franges de leurs périmètres », sans reposer sur des orientations régionales cohérentes’.
+
+Du côté du transport collectif, le SRADDET repousse également sa responsabilité vers les territoires en demandant plus de coordinations entre eux, par exemple dans les règles 28 et 29 (Fascicule, p 87, p 89), alors que c'est à la région de mettre en œuvre les standards et les systèmes à utiliser à travers les territoires et frontières pour être vraiment cohérent.
+            </textarea>
+          </div>
+          <h2>Vos ajouts</h2>
+          <div class="site-option site-option__custom">
+            <label for="custom_header">titre</label>
+            <input type="text" id="custom_header" name="custom_header" value="" />
+            <textarea class="site-option__content" rows="10" name="custom_content">
+Dans son ensemble le SRADDET n'est pas du tout à la hauteur de ses ambitions. Les diagnostics ne sont pas complets, la vision manque d’une vraie vision pour la région face aux mutations constatées et le fascicule des règles laisse beaucoup à désirer sur les points où la région doit prendre l'initiative, tout en déléguant la responsabilité aux territoires. L'environnement et notre écosystème sont traités comme des ressources à exploiter sans limitation tandis que certains sujets comme les logistiques ou les transports fluviaux sont privilégiés unilatéralement.
+
+Je suis donc contre ce SRADDET incomplet et incohérent, mon avis est négatif. Je demande que les points décrits ci-dessus soient inclus dans une nouvelle version de SRADDET - plus lisible et plus compréhensible avec une nouvelle enquête du public.
+            </textarea>
+          </div>
+        </div>
+
+        <hr/>
+
+        <div class="field-element__wrapper">
+          <div class="field-element">
+            <label for="first_name">Prénom</label>
+            <input type="text" required id="first_name" value="" name="first_name" />
+          </div>
+          <div class="field-element">
+            <label for="last_name">Nom</label>
+            <input type="text" required id="last_name" value="" name="last_name" />
+          </div>
+          <div class="field-element">
+            <label for="zip_code">Code Postal</label>
+            <input type="text" required id="zip_code" value="" name="zip_code" />
+          </div>
+          <div class="field-element">
+            <label for="city">Ville</label>
+            <input type="text" required id="ville" value="" name="city" />
+          </div>
+        </div>
+
+        <hr/>
+        <p>
+        <button id="dummy">Produire votre avis (PDF)</button> et le téléchargez sur <a href="https://www.registredemat.fr/sraddethautsdefrance-enquetepublique/deposez-votre-observation-en-lign">le site de l'enquête publique de SRADDET</a>
+        </p>
+        <p><a href="https://arret-sraddet.fr/">Retour à arret-sraddet.fr</a></p>
+      </form>
+    </div>
+
+    <script type="text/javascript">
+      /* dirty */
+      (function (window, document, XMLSerializer, btoa, Math) {
+        
+        /* texts */
+        var title = "Enquête publique sur le Schéma Régional Aménagement, de Développement Durable et d'Egalité des Territoires (SRADDET)"
+        var subtitle = "AVIS"
+        var content_biodiversity_header = "Quel est l’objectif du SRADDET concernant la biodiversité ?";
+        var content_logistics_header = "Pourquoi une Carte Blanche pour la construction du Canal Seine Nord Europe et des installations de logistique ?";
+        var content_climate_change_header = "Où sont les efforts de mitigation du changement climatique dans le SRADDET ?";
+        var content_renewables_header = "Où sont les cibles et les mesures concrètes pour augmenter la capacité des énergies renouvelables dans le SRADDET ?";
+        var content_greenhouse_header = "Pourquoi aucune mesure ni exigences concrètes ne sont proposées afin de réduire les émissions de gaz à effet de serre?";
+        var content_transport_header = "Où se trouvent les propositions pour un nouveau type de transports dans la région ?";
+
+        var raw_form = document.getElementById("avis");
+        var banner = document.getElementById("banner");
+        var dummy = document.getElementById("dummy");
+        var canvas = document.createElement("canvas");
+        var ctx = canvas.getContext("2d");
+        var img = new Image();
+        var doc = doc = new jsPDF();
+        var left_margin = 10;
+        var right_margin = 10;
+        var pdf_width = 210;
+
+        raw_form.onsubmit = hookForm;
+        dummy.onclick = hookButton;
+        img.onload = convertToBase64;
+        img.src = "FR-HDF.Sraddet.Banner.Dark.png";
+
+        function hookForm(my_event) {
+          my_event.stopPropagation();
+          return generateAvis(my_event.target);
+        }
+        function hookButton () {
+          return generateAvis(raw_form);
+        }
+        function convertImgToBase64(img){
+          canvas.width = 1200;
+          canvas.height = 600;
+          ctx.drawImage(img, 0, 0);
+          return canvas.toDataURL("image/png");
+        }
+
+        function convertToBase64 (my_event) {
+          doc.setFillColor("cccccc");
+          doc.rect(0, 0, 210, 80, 'F');
+          doc.addImage(convertImgToBase64(my_event.target), "PNG", 30, 0, 160, 80, "foo", "NONE", 0);
+        }
+
+        function generateAvis(my_form) {
+          var form = my_form;
+          var user_name = form.first_name.value + " " + form.last_name.value.toUpperCase();
+          var place = form.zip_code.value + " " + form.city.value;
+          var page_width = pdf_width-left_margin-right_margin;
+          var splitext;
+          var height_counter = 140;
+          var page_max = 280;
+          var page_number = 1;
+          var ratio = /*3.5227;*/ 0.4;
+          var remaining_lines;
+
+          doc.setFont("times", "normal");
+          doc.setFontSize(14);
+          doc.text(doc.splitTextToSize(title, page_width), 100, 90, {"align": "center"});
+          doc.setFontSize(24);
+          doc.text(doc.splitTextToSize(subtitle, page_width), 100, 110);
+          doc.setFontSize(12);
+          doc.setFont("times", "italic");
+          doc.text("soumis par :", 140, 120);
+          doc.setFont("times", "normal");
+          doc.text(user_name, 140, 125);
+          doc.text(place, 140, 130);
+
+          function updateHeight(my_text_array, factor) {
+            height_counter += Math.round(splitext.length * factor);
+            if (height_counter > page_max) {
+              doc.text(("Avis : " + user_name + " | Page : " + page_number), 100, 290, {"align": "center"});
+              doc.addPage();
+              page_number += 1;
+              height_counter = 10;
+            }
+          }
+
+          function addText(my_text, my_factor) {
+            var arr;
+            var carry;
+            var text = my_text.replace(/"/g, "'");
+            doc.setFontSize(my_factor);
+            arr = doc.splitTextToSize(text, page_width);
+            remaining_lines = Math.round((page_max - height_counter)/Math.round(ratio * my_factor));
+            if (arr.length > remaining_lines) {
+              doc.text(arr.slice(0, remaining_lines - 1), left_margin, height_counter);
+              doc.text(("Avis : " + user_name + " | Page : " + page_number), 100, 290, {"align": "center"});
+              doc.addPage();
+              page_number += 1;
+              height_counter = 10;
+              carry = arr.slice(remaining_lines - 1, arr.length);
+              doc.text(carry, left_margin, height_counter);
+              height_counter += Math.round(Math.round(ratio * my_factor) * carry.length) + 1;
+            } else {
+              doc.text(arr, left_margin, height_counter);
+              height_counter += Math.round(Math.round(ratio * my_factor) * arr.length) + 1;
+            }
+            height_counter += 5;
+          }
+
+          if (form.biodiversity_header.checked === true) {
+            addText(content_biodiversity_header, 12);
+            addText(form.biodiversity_content.value, 10);
+          }
+          if (form.logistics_header.checked === true) {
+            addText(content_logistics_header, 12);
+            addText(form.logistics_content.value, 10);
+          }
+          if (form.climate_change_header.checked === true) {
+            addText(content_climate_change_header, 12);
+            addText(form.climate_change_content.value, 10);
+          }
+          if (form.renewables_header.checked === true) {
+            addText(content_renewables_header, 12);
+            addText(form.renewables_content.value, 10);
+          }
+          if (form.greenhouse_header.checked === true) {
+            addText(content_greenhouse_header, 12);
+            addText(form.greenhouse_content.value, 10);
+          }
+          if (form.transport_header.checked === true) {
+            addText(content_transport_header, 12);
+            addText(form.transport_content.value, 10);
+          }
+          addText(form.custom_header.value, 12);
+          addText(form.custom_content.value, 10);
+          doc.text(("Avis : " + user_name + " | Page : " + page_number), 100, 290, {"align": "center"});
+
+          doc.save('sraddet-avis.pdf')
+          return false;
+        };
+      }(window, document, XMLSerializer, btoa, Math));
+    </script>
+  </body>
+</html>
